@@ -1,0 +1,589 @@
+/* ---------------------------------------------------
+    GLOBAL STYLE
+----------------------------------------------------- */
+body,
+html,
+#wraper {
+    height: 100%;
+    background-attachment: fixed;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased !important;
+    background: #4267b2;
+
+
+
+}
+
+/* ---------------------------------------------------
+      LANGUAGE-PAGE STYLE
+  ----------------------------------------------------- */
+
+#language-page {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4267b2;
+    font-family: 'Staatliches', sans-serif;
+}
+
+.typewriter-language h1 {
+
+    color: #fff;
+    font-size: 4em;
+    overflow: hidden;
+    border-right: .15em solid #fff;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 1.5px;
+    animation:
+        typing 3.5s steps(40, end),
+        blink-caret 0.5s step-end infinite;
+}
+
+.btn-language {
+
+    padding-top: 80px;
+
+}
+
+.btn-language a {
+    padding: 10px 30px;
+    width: 300px;
+    font-size: 2em;
+    letter-spacing: 1px;
+
+}
+
+.btn-language img {
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: 10px;
+    text-align: center;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: #fff;
+    }
+}
+
+/* ---------------------------------------------------
+      SCROLLBAR STYLE
+  ----------------------------------------------------- */
+
+::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #4267b2;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #4267b2;
+}
+
+
+
+/* ---------------------------------------------------
+      NAVBAR STYLE
+  ----------------------------------------------------- */
+
+.navbar {
+    background-color: #4267b2;
+    padding: 20px;
+
+}
+
+.navbar-nav.active {
+    color: #fff !important;
+}
+
+.navbar-dark .navbar-brand {
+    color: #fff;
+
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    font-size: 1.05em;
+    margin-right: 10px;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    font-family: 'Staatliches', sans-serif;
+
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #fff !important;
+
+
+}
+
+.navbar-dark .btn {
+    color: rgba(255, 255, 255, .9) !important;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+/* ---------------------------------------------------
+      SIDEBAR STYLE
+  ----------------------------------------------------- */
+
+#sidebar {
+    width: 200px;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    height: 100vh;
+    z-index: 100000000;
+    background: #e9ebee;
+    color: #4267b2;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    overflow-y: scroll;
+    -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+
+}
+
+#sidebar.active {
+    right: 0;
+    overflow: hidden;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    padding-bottom: 27px;
+    background: #4267b2;
+    color: #fff;
+    text-align: center;
+    -webkit-box-shadow: 0 0 px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+
+}
+
+#sidebar .sidebar-header i {
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+
+#sidebar ul.components {
+    padding: 30px 0px;
+    border-bottom: 1px solid #ccc;
+
+}
+
+
+#sidebar ul li a {
+    padding: 20px 0;
+    padding: 10px;
+    font-size: 1.2em;
+    display: block;
+    color: #4267b2;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Staatliches', sans-serif;
+}
+
+#sidebar ul li a:hover {
+    color: #fff;
+    background: #4267b2;
+    text-decoration: none !important;
+}
+
+/* ---------------------------------------------------
+      SOCIAL MENU STYLE
+  ----------------------------------------------------- */
+
+.social {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 200;
+    width: 100px;
+}
+
+.social a {
+    color: #fff;
+}
+
+.social a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social ul {
+    padding: 10px;
+    transform: translate(-300px, 0);
+    font-family: 'Staatliches', sans-serif;
+    letter-spacing: 1px;
+
+}
+
+.social ul li {
+    display: block;
+    margin: 5px;
+    width: 350px;
+    text-align: right;
+    transition: all 0.4s;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.social ul li:hover {
+    transform: translate(110px, 0);
+}
+
+.social ul li i {
+    margin-left: 10px;
+    padding: 20px;
+    color: #fff;
+}
+
+
+/* ---------------------------------------------------
+      HOME STYLE
+  ----------------------------------------------------- */
+
+.typewriter-effect {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4267b2;
+}
+
+.typewriter-effect h1 a {
+    font-size: 1.2em;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    cursor: default;
+    font-family: 'Staatliches', sans-serif;
+}
+
+.typewriter-effect h1 {
+    text-align: center;
+}
+
+
+/* ---------------------------------------------------
+     ABOUT ME STYLE
+  ----------------------------------------------------- */
+
+#about_me {
+    background-color: #4267b2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+
+}
+
+
+.about-card {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    margin: auto;
+
+}
+
+
+.card-header.about:first-child {
+    background-color: #4267b2;
+    font-family: 'Staatliches', cursive;
+    margin: 0;
+
+}
+
+.about-header-title {
+    letter-spacing: 1.5px;
+}
+
+
+.about-title-body {
+    color: #29487d;
+    text-transform: uppercase;
+    font-family: 'Staatliches', cursive;
+    font-size: 1.3em;
+    margin-top: 10px;
+
+}
+
+.email {
+    color: #4267b2;
+}
+
+
+
+.btn.resume.btn-light {
+    border: 1px solid #d1d1d1;
+    padding: 10px !important;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    background: #fff !important;
+    color: #4267b2;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    -webkit-transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    -o-transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+
+}
+
+.btn.resume.btn-light:hover {
+    background: #4267b2 !important;
+    color: #fff;
+}
+
+/* ---------------------------------------------------
+      MODAL STYLE
+  ----------------------------------------------------- */
+
+.modal-header.bg-primary {
+    background: #4267b2 !important;
+    color: #fff;
+    border-radius: 3.2px 3.2px 0 0 !important;
+
+}
+
+.modal-header {
+    border-bottom: 0 !important;
+}
+
+.modal-content {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.project-name {
+    font-size: 2rem;
+    color: #000;
+    letter-spacing: 1px;
+    font-family: 'Staatliches', cursive;
+    font-weight: bold;
+    color: #29487d;
+    text-align: center;
+
+}
+
+.badge.badge-dark {
+    background-color: #4267b2;
+    font-weight: 700;
+    padding: 5px;
+    color: #fff;
+
+}
+
+.about-project {
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    margin-top: 30px;
+    padding: 5px;
+}
+
+.btn.btn-project {
+    color: #fff;
+    font-family: "Staatliches", sans-serif;
+    letter-spacing: 1px;
+    background-color: #4267b2;
+    border: none;
+    border-radius: 3px;
+    padding: 0.5em 2em;
+    transition: all .2s;
+}
+
+.btn.btn-project:hover {
+    background-color: #29487d;
+}
+
+/* ---------------------------------------------------
+      PORTIFOLIO STYLE
+  ----------------------------------------------------- */
+#portfolio {
+    display: flex;
+    align-self: center;
+    background: #4267b2;
+    height: 100%;
+    margin: auto;
+    max-width: 1000px;
+    padding-bottom: 50px;
+
+}
+
+.container.port {
+    height: 100%;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.card.port {
+    border: none;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+
+.card-title.port {
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 1px;
+    color: #4267b2;
+    text-transform: uppercase;
+}
+
+.img-hover-zoom {
+    overflow: hidden;
+}
+
+
+.img-hover-zoom img {
+    transition: transform .7s ease;
+}
+
+
+.img-hover-zoom:hover img {
+    transform: scale(1.2);
+}
+
+.card.port:hover img {
+    transform: scale(1.2);
+}
+
+.card-img-overlay {
+    position: absolute;
+    left: 0;
+    text-align: center;
+    opacity: 0;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 1px;
+    transition: opacity .35s ease;
+}
+
+.card-img-overlay a {
+    z-index: 1;
+}
+
+.card.port:hover .card-img-overlay {
+    opacity: 1;
+}
+
+
+
+
+/* ---------------------------------------------------
+      CONTACT STYLE
+  ----------------------------------------------------- */
+
+#contact {
+    background-color: #4267b2;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.contact-card {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    margin: auto;
+}
+
+.card-header.contact:first-child {
+    background-color: #4267b2;
+    font-family: 'Staatliches', cursive;
+    margin: 0;
+
+}
+
+.contact-header-title {
+    letter-spacing: 1.5px;
+}
+
+.btn.btn-block.submit {
+    background: linear-gradient(120deg, #4267b2, #29487d, #4267b2);
+    background-size: 200%;
+    padding: 10px;
+    text-transform: uppercase;
+    transition: all 0.6s ease 0s;
+
+}
+
+.btn.btn-block.submit:hover {
+    background-position: right;
+    letter-spacing: 6px;
+    border-radius: 10px;
+    transition: all 0.6s ease 0s;
+}
+
+.form-control {
+    border: none;
+    background: none;
+    border-radius: 0 !important;
+    outline: 0 !important;
+
+}
+
+.form-group {
+    border-bottom: 2px solid #adadadad;
+    position: relative;
+}
+
+.form-control:focus {
+    box-shadow: none !important;
+}
+
+.form-group span::before {
+    content: attr(data-placeholder);
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #29487d;
+    font-family: 'Staatliches', cursive;
+    transform: translateY(-50%);
+    z-index: 0;
+    transition: .5s;
+
+}
+
+.form-group span::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    transition: .5s;
+    background: #4267b2;
+
+}
+
+.focus+span::before {
+    top: -5px;
+}
+
+.focus+span::after {
+    width: 100%;
+}
