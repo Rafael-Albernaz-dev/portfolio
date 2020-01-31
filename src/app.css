@@ -368,17 +368,6 @@ html,
       MODAL STYLE
   ----------------------------------------------------- */
 
-.modal-header.bg-primary {
-    background: #4267b2 !important;
-    color: #fff;
-    border-radius: 3.2px 3.2px 0 0 !important;
-
-}
-
-.modal-header {
-    border-bottom: 0 !important;
-}
-
 .modal-content {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
@@ -388,7 +377,7 @@ html,
     color: #000;
     letter-spacing: 1px;
     font-family: 'Staatliches', cursive;
-    font-weight: bold;
+    font-weight: lighter;
     color: #29487d;
     text-align: center;
 
@@ -402,12 +391,29 @@ html,
 
 }
 
-.about-project {
+.project-label {
+    font-size: 1.4rem;
+    color: #29487d;
+    letter-spacing: 1px;
+    font-family: "Staatliches", sans-serif;
+}
+
+.project-summary {
+    /* margin-top: 1rem; */
+    font-family: 'Roboto',sans-serif;
+    font-size: 1rem;
+    /* line-height: 1.5; */
+    color:#000;
+    overflow-y: scroll;
+    height: 10rem;
+    white-space: pre-line;
+}
+/* .about-project {
     border: 1px solid #ccc;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     margin-top: 30px;
     padding: 5px;
-}
+} */
 
 .btn.btn-project {
     color: #fff;
